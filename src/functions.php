@@ -15,13 +15,13 @@ namespace in4s;
 /**
  * Render given debugging data followed by die()
  *
- * @version v1.5.2 2020-09-17 21:23:43
+ * @version v1.5.3 2020-09-17 21:36:47
  * @return void
  */
 function debug()
 {
     $args = func_get_args();
-    call_user_func_array('dump', $args);
+    dump(...$args);
     die();
 }
 
